@@ -14,6 +14,9 @@ RUN dotnet publish -c Release -o /out
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 
+# 🔥 Make ASP.NET listen on all IPs
+ENV ASPNETCORE_URLS=http://+:8080
+
 # Copy build output
 COPY --from=build /out .
 
