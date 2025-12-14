@@ -1,0 +1,12 @@
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/MyWeb
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/appsettings.json
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/MyWeb.dll
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/MyWeb.deps.json
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/MyWeb.runtimeconfig.json
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/MyWeb.pdb
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/Microsoft.OpenApi.dll
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/mahrbdrzq/Documents/asp/MyWeb/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
