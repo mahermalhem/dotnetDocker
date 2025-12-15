@@ -1,0 +1,41 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to VPS
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and Push Docker Image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/gettingtestrepo:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/gettingtestrepo:latest
+
+      - name: Deploy to Server (Password)
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          script: |
+            docker pull ${{ secrets.DOCKER_USERNAME }}/gettingtestrepo:latest
+            docker stop myapp || true
+            docker rm myapp || true
+            docker run -d \
+              -p 8080:8080 \
+              --restart always \
+              --name myapp \
+              ${{ secrets.DOCKER_USERNAME }}/gettingtestrepo:latest

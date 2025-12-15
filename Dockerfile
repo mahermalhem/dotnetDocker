@@ -28,3 +28,6 @@ ENTRYPOINT ["dotnet", "MyWeb.dll"]
 
 # docker build -t maherdotnet .
 # docker run -d -p 8080:8080 --name maher-app  maherdotnet .
+
+# on production
+# docker run -d -p 80:8080  maherdotnet .
