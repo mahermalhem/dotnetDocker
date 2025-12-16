@@ -36,7 +36,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
+          
       - name: Login to ACR
         run: az acr login --name mycontainertesting
 

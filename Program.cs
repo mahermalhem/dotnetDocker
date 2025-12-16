@@ -21,7 +21,8 @@ var summaries = new[]
     "if this work",
     "it means",
     "the image",
-    "is from AZURE"
+    "is from AZURE",
+    "test"
 };
 
 app.MapGet("/weatherforecast", () =>
