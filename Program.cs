@@ -18,7 +18,10 @@ app.UseHttpsRedirection();
 
 var summaries = new[]
 {
-    "test on 163",
+    "if this work",
+    "it means",
+    "the image",
+    "is from AZURE"
 };
 
 app.MapGet("/weatherforecast", () =>
