@@ -32,7 +32,6 @@ jobs:
       #     username: ${{ secrets.AZURE_REGISTRY_USERNAME }}
       #     password: ${{ secrets.AZURE_REGISTRY_PASSWORD }}
       #     registry: ${{ secrets.AZURE_REGISTRY_NAME }}  # e.g., myregistry.azurecr.io
-
       - name: Azure Login
         uses: azure/login@v1
         with:
